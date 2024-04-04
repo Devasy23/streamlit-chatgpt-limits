@@ -1,15 +1,15 @@
 from datetime import datetime, timedelta
 
 import streamlit as st
-import toml
+# import toml
 from dateutil.parser import parse
 from pymongo import MongoClient
 from streamlit_calendar import calendar
 from werkzeug.security import check_password_hash, generate_password_hash
 
-config = toml.load("config.toml")
+# config = toml.load("config.toml")
 # MongoDB setup (Replace with your connection details)
-client = MongoClient(config["mongodb"]["client"])
+client = MongoClient(st.secrets["mongodb"]["client"])
 db = client.streamlit_app
 users_collection = db.users
 bookings_collection = db.bookings
