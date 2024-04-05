@@ -50,6 +50,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 For more information, check out the [project wiki](https://github.com/yourusername/chatgpt-4-query-manager/wiki).
 
-![Demo Screenshot](path/to/screenshot.png)
+![Demo Screenshot](tutorials\demo1.png)
 
-[![Tutorial Video](path/to/video_thumbnail.png)](link/to/tutorial_video)
+[![Tutorial Video](tutorials\tutorial.mp4)](tutorials\tutorial.mp4)
