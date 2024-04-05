@@ -52,4 +52,4 @@ For more information, check out the [project wiki](https://github.com/youruserna
 
 ![Demo Screenshot](tutorials\demo1.png)
 
-[![Tutorial Video](tutorials\tutorial.mp4)](tutorials\tutorial.mp4)
+[![Tutoria Video](tutorials/tutorial.mp4)](tutorials/tutorial.mp4)
