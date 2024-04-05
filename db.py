@@ -3,7 +3,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 # Initialize MongoDB client
 client = MongoClient(
-    "mongodb+srv://dhruvcpatel18:utuSVeuKyLWCtX6w@gpt.yof23ct.mongodb.net/"
+    st.secrets["mongodb"]["client"]
 )
 db = client.streamlit_app
 
