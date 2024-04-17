@@ -9,6 +9,9 @@ from werkzeug.security import check_password_hash, generate_password_hash
 
 # config = toml.load("config.toml")
 # MongoDB setup (Replace with your connection details)
+# app layout wide and favicon calender
+st.set_page_config(layout="wide", page_title="ChatGPT-4 Query Manager", page_icon=":calendar:")
+
 client = MongoClient(st.secrets["mongodb"]["client"])
 db = client.streamlit_app
 users_collection = db.users
@@ -93,8 +96,8 @@ def display_booking_calendar(username):
         "editable": True,
         "selectable": True,
         "initialView": "timeGridWeek",
-        "slotMinTime": "06:00:00",
-        "slotMaxTime": "22:00:00",
+        "slotMinTime": "00:00:00",
+        "slotMaxTime": "24:00:00",
     }
     calendar_callbacks = ["select"]
     custom_css = """
